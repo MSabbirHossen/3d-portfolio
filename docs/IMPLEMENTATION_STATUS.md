@@ -12,8 +12,8 @@
 | Phase | Title | Status | Gate Proof | Commit Range |
 |---|---|---|---|---|
 | **Phase 0** | Repository Audit & Migration Inventory | **DONE** | Audited commit `db32ec579b7af695ee785ed38f2c23541ae8e2ab`, `docs/AUDIT.md`, `docs/CONTENT_INVENTORY.csv` (97 items), `docs/MIGRATION.md`, `docs/ADR/0001-...md` | `6d68774` - `5ba79dd` |
-| **Phase 1** | Application Foundation & Design System | In progress | Executing IMP-P1-01 through IMP-P1-04 | — |
-| **Phase 2** | Backend Foundation, Database & Auth | Not started | Blocked on Phase 1 & Firebase/MongoDB manual setup | — |
+| **Phase 1** | Application Foundation & Design System | **DONE** | Next.js App Router + strict TypeScript, Tailwind v4 design tokens, accessible UI primitives, domain service boundaries, Vitest suite (11/11 passed), production build | `6b06de1` - `d938101` |
+| **Phase 2** | Backend Foundation, Database & Auth | Not started | Blocked on Phase 1 approval & Firebase/MongoDB manual setup | — |
 | **Phase 3** | Project & Media CMS | Not started | Blocked on Phase 2 | — |
 | **Phase 4** | Remaining CMS Modules | Not started | Blocked on Phase 3 | — |
 | **Phase 5** | Public Portfolio UI & Selective 3D | Not started | Blocked on Phase 4 | — |
@@ -40,12 +40,25 @@
 
 ---
 
-## Gate G0 Acceptance Checklist
+### Phase 1 — Application Foundation & Design System
 
-- [x] Exact source commit logged (`db32ec579b7af695ee785ed38f2c23541ae8e2ab`).
-- [x] All content entities inventoried without fabrication (`docs/CONTENT_INVENTORY.csv`).
-- [x] Target Mongoose schema mappings documented (`docs/MIGRATION.md`).
-- [x] Security exposures and credential risks cataloged (`docs/AUDIT.md`).
-- [x] Zero loss or destruction of original portfolio code or Git history.
-- [x] Architectural decisions recorded in `docs/ADR/`.
-- [x] Atomic, traceable Conventional Commits created.
+| Task ID | Description | Status | Commit | Verification Evidence |
+|---|---|---|---|---|
+| **IMP-P1-01** | Next.js App Router, strict TypeScript, Tailwind CSS, .env.example, .gitignore | **Done** | `6b06de1` | `npm run build` & `npm run typecheck` pass with zero errors |
+| **IMP-P1-02** | Accessible UI primitives (`Button`, `Badge`, `Card`, `Input`, `Textarea`), `Navbar`, `Footer`, `Container` | **Done** | `a929ad3` | UI primitives rendered, verified with `@testing-library/react` |
+| **IMP-P1-03** | Domain services, repository interfaces, Zod schemas, API error/response envelopes, ADR 0002 | **Done** | `d99681e` | GET `/api/v1/projects` endpoint and domain publication tests pass |
+| **IMP-P1-04** | Testing infrastructure with Vitest, jsdom, React Testing Library, starter test suite | **Done** | `d938101` | 11 unit tests passing across 3 test files; `npm test` exit code 0 |
+
+---
+
+## Gate G1 Acceptance Checklist
+
+- [x] Next.js App Router application bootstrapped with strict TypeScript (`tsconfig.json`).
+- [x] Tailwind CSS configured with design tokens matching `docs/UI_UX_DESIGN_BRIEF.md`.
+- [x] Accessible UI primitives (`Button`, `Badge`, `Card`, `Input`, `Textarea`) implemented.
+- [x] Responsive layout shell (`Navbar`, `Footer`, `Container`) implemented.
+- [x] Domain service boundary with strict Zod contracts and standardized API response envelopes implemented.
+- [x] ADR 0002 recorded for feature-oriented architecture.
+- [x] Vitest and React Testing Library configured; 11/11 tests passing.
+- [x] Production build (`npm run build`) passing with zero errors and zero warnings.
+- [x] Clean Git working tree; four atomic commits created for Phase 1.
