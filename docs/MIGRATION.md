@@ -18,6 +18,13 @@
 4. **Decouple Data from UI Bundles:** Convert hardcoded React icon components (`SiReact`) into string icon identifiers (`si-react`, `lucide-code`).
 5. **Asset Integrity:** Screenshots and resume PDFs must be uploaded to Cloudinary or secure media storage, recording verified metadata in MongoDB `media_assets`.
 
+### 1.1 Extraction Methodology: Dynamic Module Evaluation (No Fragile Regex)
+- **Problem:** Regular expressions fail on deeply nested JavaScript objects, multiline template strings, array elements, and commented code blocks.
+- **Specification:** The Phase 6 migration loader (`scripts/migrate/extract-legacy.mjs`) will execute directly via the Node.js ESM module loader.
+- **Icon Dependency Virtualization:** Because legacy data modules import UI icon components from `../icons`, the migration runner provides a module resolver alias or Proxy mock that maps imported icon symbols to string identifiers (e.g., `SiReact -> 'si:SiReact'`).
+- **Complete Object Fidelity:** All complex fields (`technologies`, `architecture`, `challenges`, `lessonsLearned`, `apiEndpoints`, `performanceMetrics`) are evaluated as native JavaScript objects and transformed directly into Zod-validated DTOs prior to insertion.
+
+
 ---
 
 ## 2. Source-to-Target Field Mapping Matrix
