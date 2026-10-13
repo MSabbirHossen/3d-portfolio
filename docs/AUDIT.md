@@ -158,3 +158,34 @@ legacy-repo/
 | `/favicon.svg` | SVG Vector | 9.5 KB | Site branding icon | `public/favicon.svg` |
 | `/og-image.svg` | SVG Vector | 1.7 KB | Social OpenGraph sharing card | Generated dynamic OG route or static asset |
 | `/stats.json` | JSON Data | 2.7 KB | Cached GitHub repository statistics | MongoDB or dynamic cache |
+
+---
+
+## 5. Issues Register & Credential Remediation Plan (IMP-P0-04)
+
+### 5.1 Credential & Security Analysis
+| Issue ID | Severity | Component / Location | Description | Remediation Plan |
+|---|---|---|---|---|
+| SEC-01 | Medium | `src/components/contact/ContactForm.jsx` | Client-side EmailJS integration exposes template and service IDs in browser bundles; susceptible to script automated spam without CAPTCHA or server rate-limiting. | Eliminate `@emailjs/browser`. Route all submissions through `/api/v1/contact` with Zod validation, IP rate-limiting, honeypot fields, and server-side storage in MongoDB `contact_messages`. Server dispatches notifications via secure server credentials. |
+| SEC-02 | Low | `.env.example` | Legacy `.env.example` contains only EmailJS keys. Missing templates for future database and authentication credentials. | Create comprehensive, sanitized `.env.example` covering `MONGODB_URI`, `FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`, `FIREBASE_PRIVATE_KEY`, `SESSION_SECRET`, and `CLOUDINARY_*`. |
+| SEC-03 | Low | `public/stats.json` & `scripts/update-stats.js` | Update script requires `process.env.GH_TOKEN` to fetch GitHub statistics. | Run GitHub metadata queries on the Next.js server with caching and ISR; never expose GitHub tokens to the browser. |
+
+### 5.2 Content & Data Quality Findings
+| Finding ID | Severity | Affected Entity | Finding | Recommended Policy |
+|---|---|---|---|---|
+| DAT-01 | Medium | Projects | `etaProject.js` lists placeholder `liveUrl: 'https://eta.example.com/'`. | Mark `etaProject` publication status as `published` only if live URL is verified, or omit `liveUrl` rendering when equal to placeholder. |
+| DAT-02 | Medium | Projects | `src/data/projects/` contains both `etaProject.js` and duplicate file `eta-project.ts`. | Canonicalize to a single source entity during migration. |
+| DAT-03 | Low | Projects | Three projects in `projects/index.js` are commented out (`portfolio-website`, `exploratory-lab`, `learning-tracker`) with dummy URLs (`sabbir.dev`, `lab.sabbir.dev`). | Import as `draft` in MongoDB. Do not publish until verified by owner. |
+| DAT-04 | Low | Certifications | Two certifications commented out (`IELTS Preparation Course`, `Basic IT Course`) without credential links. | Import as `draft` in MongoDB. |
+| DAT-05 | Low | Education | Two education entries commented out (`Islami Arabic University`, `Oakland English Research Centre`). | Import as `draft` in MongoDB. |
+| DAT-06 | Low | Skills | Skill icons are coupled to React icon components (`SiReact`, etc.) inside data files. | Decouple data from icon packages; store icon identifier strings (`si-react`, `lucide-code`) in MongoDB. |
+
+---
+
+## 6. Technical Debt & Scope Gaps
+
+1. **State Persistence Debt:** All content in the legacy portfolio is statically bundled. Any typo fix or project addition required a Git commit and GitHub Actions redeploy. The target CMS eliminates this completely.
+2. **SEO & Indexing Debt:** Client-side React 19 SPA relies on `react-helmet-async`. Crawlers without JavaScript execution cannot index case study pages. Next.js Server Components solve this natively.
+3. **No Draft or Concurrency Safeguards:** Zero draft capability existed in the legacy application.
+4. **AI Assistant Portability:** The legacy client chatbot was built on a custom intent matcher. Per PRD and TRD scope decisions, this feature is explicitly deferred to V2 (Phase 10) to keep the MVP launch focused, performant, and secure.
+
