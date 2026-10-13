@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { ReactNode } from "react";
+import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -27,8 +29,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className="antialiased selection:bg-sky-500/30 selection:text-sky-200">
-        {children}
+      <body className="flex min-h-screen flex-col bg-[#090d16] text-slate-100 antialiased selection:bg-sky-500/30 selection:text-sky-200">
+        <Navbar />
+        <div className="flex-1">{children}</div>
+        <Footer />
       </body>
     </html>
   );
