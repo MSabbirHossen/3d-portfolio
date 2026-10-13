@@ -1,0 +1,82 @@
+{
+  "publicRepos": 61,
+  "followers": 4,
+  "following": 7,
+  "totalStars": 5,
+  "totalForks": 0,
+  "topLanguages": [
+    {
+      "name": "JavaScript",
+      "count": 35
+    },
+    {
+      "name": "HTML",
+      "count": 12
+    },
+    {
+      "name": "TypeScript",
+      "count": 2
+    },
+    {
+      "name": "CSS",
+      "count": 2
+    }
+  ],
+  "recentRepos": [
+    {
+      "name": "MSabbirHossen.github.io",
+      "description": "Building the future where Faith, Knowledge & Technology empower the Ummah.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/MSabbirHossen/MSabbirHossen.github.io",
+      "updated": "2026-10-13T00:13:54Z"
+    },
+    {
+      "name": "ETA",
+      "description": "Exploratory Training Academy (ETA) is a complete digital education management platform designed for an educational institution that may operate fully online, physically, or in a hybrid model.",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/MSabbirHossen/ETA",
+      "updated": "2026-10-11T15:35:38Z"
+    },
+    {
+      "name": "Personal_App-Store_Authentication",
+      "description": "A modern, responsive web application for discovering, browsing, and managing applications. Built with React and Vite, featuring real-time search, sorting, and local app installation tracking.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/MSabbirHossen/Personal_App-Store_Authentication",
+      "updated": "2026-10-06T21:30:54Z"
+    },
+    {
+      "name": "Personal_App-Store",
+      "description": "No description available",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/MSabbirHossen/Personal_App-Store",
+      "updated": "2026-10-06T20:16:15Z"
+    },
+    {
+      "name": "Online-Game-Library",
+      "description": "A vibrant, urban-themed web application for discovering, exploring, and downloading indie games and AAA titles. GameHub provides an engaging platform for gamers to browse games, view detailed information, and connect with gaming communities.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/MSabbirHossen/Online-Game-Library",
+      "updated": "2026-10-06T20:12:59Z"
+    },
+    {
+      "name": "lifeosclient",
+      "description": "Client Side of life OS.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/MSabbirHossen/lifeosclient",
+      "updated": "2026-09-29T21:30:09Z"
+    }
+  ],
+  "updatedAt": "2026-10-13T13:42:12.758Z"
+}

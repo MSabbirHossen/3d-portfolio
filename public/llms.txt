@@ -1,0 +1,77 @@
+# Md. Sabbir Hossen - MERN Stack Developer
+
+MERN Stack Developer building AI-assisted, security-conscious web applications.
+
+## About
+
+Full-stack developer focused on building practical web applications with MERN, AI-assisted workflows, and security-aware implementation. I combine continuous learning, disciplined problem solving, and real project work to create software that is useful, reliable, and easy to extend.
+
+## Skills
+
+- **Frontend:** React 19, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS v4, Framer Motion, Vite, React Router, DaisyUI
+- **Backend:** Node.js, Express.js, MongoDB, PostgreSQL, Firebase, REST APIs, JWT Authentication
+- **Tools:** Git, GitHub, Docker, VS Code, npm, Vercel, ESLint, Prettier, Postman, Chrome DevTools
+- **Soft Skills:** Self-learning, Time Management, Adaptability, Problem Solving, Communication, Teamwork
+- **Learning / Exploring:** Prompt Engineering, Secure Coding Principles, Basic Network Security, AI Coding Assistants, LLM API Integration, OSINT Research, OWASP Top 10 Awareness
+
+## Projects
+
+### Exploratory Training Academy (ETA)
+A complete digital education management platform designed for educational institutions operating online, physically, or in a hybrid model. Built with TypeScript, React, Node.js, Express, PostgreSQL, and Docker to provide seamless multi-modal learning workflows, automated attendance, dynamic course scheduling, and secure role-based portals.
+- Tech stack: TypeScript, React 19, Node.js, Express.js, PostgreSQL, Docker, Tailwind CSS, Vite, JWT Auth, RESTful API
+- Links: [Live site](https://eta.example.com/) | [GitHub](https://github.com/MSabbirHossen/ETA) | [Case study](/projects/eta-digital-education-platform)
+### Import Export Hub
+Built a full-stack marketplace for connecting exporters and importers, covering product management, import workflows, and authenticated access. Implemented with React, Node.js/Express, MongoDB Atlas, Firebase, and security middleware to demonstrate MVC architecture, secure API design, and production-focused deployment.
+- Tech stack: MongoDB Atlas, Express.js, React 18, Node.js, Mongoose, Firebase Admin SDK, Vite, React Router, Tailwind CSS, Helmet, Express Rate Limit, Axios
+- Links: [Live site](https://import-export-hub-client.vercel.app/) | [GitHub](https://github.com/MSabbirHossen/export-import-project) | [Case study](/projects/export-import-project)
+### Digital Life Lessons
+Built a full-stack learning and discussion platform for sharing practical life lessons with authenticated access, premium payment workflows, and admin moderation. Implemented with React, Node.js/Express, MongoDB, Firebase, and Stripe to demonstrate end-to-end MERN delivery, secure integration, and role-based access.
+- Tech stack: MongoDB, Express.js, React 18, Node.js, Mongoose, Vite, Tailwind CSS v3, Firebase Auth, Firebase Admin SDK, Stripe API, React Router v6, Axios, React Toastify, SweetAlert2, Lottie React
+- Links: [Live site](https://digital-life-lessons-client.vercel.app/) | [GitHub](https://github.com/MSabbirHossen/Digital-Life-Lessons) | [Case study](/projects/digital-life-lessons)
+### Life OS
+Life OS is a production-ready, single-user personal operating system that combines journaling, finance, habits, fitness, goals, Islamic tracking, study management, and reporting into one unified dashboard.
+- Tech stack: React, Vite, Tailwind CSS, Node.js, Express, MongoDB, Mongoose, JWT, bcrypt, Recharts, Lucide React, Firebase, Vercel
+- Links: [Live site](https://lifeosclient.vercel.app) | [GitHub](https://github.com/MSabbirHossen/Life-OS) | [Case study](/projects/life-os)
+### MovieExplorer — Discover TV Shows & Movies
+A modern, responsive, and feature-rich Movie & TV Show Explorer application built with React 19, Vite, and Tailwind CSS, powered by the TVMaze API. Users can browse thousands of titles, search dynamically, filter by genre and status, sort results, view rich details in a glassmorphic modal, and manage a persistent watchlist.
+- Tech stack: React, Vite, Tailwind CSS, TVMaze API, Context API, localStorage
+- Links: [Live site](https://movieexplorer-pink.vercel.app) | [GitHub](https://github.com/MSabbirHossen/movieExplorer) | [Case study](/projects/movie-explorer)
+### GameHub - Online Game Library
+Built a modern game library experience for browsing, filtering, and exploring titles with protected routes and authenticated user flows. Implemented with React 19, Firebase, Tailwind CSS v4, DaisyUI, and Framer Motion to demonstrate responsive SPA architecture, state management, and polished UI delivery.
+- Tech stack: Vite 7.2.4, React 19.2.0, Firebase 12.12.1, React Router 7.13.0, React Toastify 11.0.5, React Fast Marquee 1.6.5, React Icons 5.5.0, Tailwind CSS 4.2.4, DaisyUI 5.5.14, Framer Motion 12.0.0, Date-fns 4.1.0
+- Links: [Live site](https://online-game-library.web.app/) | [GitHub](https://github.com/MSabbirHossen/Online-Game-Library) | [Case study](/projects/online-game-library)
+### Personal App Store
+Built a responsive app discovery platform with search, sorting, protected routes, and persistent installation tracking. Implemented with React 19, Vite, Firebase Auth, React Router, Tailwind CSS, and DaisyUI to demonstrate client-side state management and multi-provider authentication workflows.
+- Tech stack: Vite 7.2, React 19.2, Firebase 12.12, React Router 7.12, Tailwind CSS 4.1, DaisyUI 5.5, Recharts 3.6, React Icons 5.5, React Toastify 11.0
+- Links: [Live site](https://personal-app-store-89cac.web.app/) | [GitHub](https://github.com/MSabbirHossen/Personal_App-Store_Authentication) | [Case study](/projects/personal-app-store)
+
+## Experience
+
+- **Full Stack MERN Developer at Personal App Store · Self-initiated product work (2026 · 3-week build):** Built and deployed a React and Firebase app-store experience with authentication, protected user flows, and reusable UI patterns for portfolio demonstration.
+- **Full Stack MERN Developer at Digital Life Lessons · Self-initiated product work (2026 · 2-week build):** Built and deployed a content-focused MERN application with a responsive React frontend and API-backed workflows for sharing practical lessons.
+- **Full Stack Developer at Import Export Hub · Self-initiated product work (2026 · 2-week build):** Delivered a deployed import/export workflow application, translating a focused business process into a usable interface and maintainable project structure.
+
+## Education
+
+- **Bachelor’s in Computer Science**, Islamic University of Madinah (Present)
+- **Arabic Language for Non-Native Speakers**, Islamic University of Madinah (Completed)
+- **Higher Secondary Certificate (Alim) – Science**, Ta’mirul Millat Kamil Madrasah, Tongi, Gazipur (2021)
+- **Secondary School Certificate (Dakhil) – Science**, Setabgonj Kamil Madrasah, Dinajpur (2019)
+- **Junior Dakhil Certificate (JDC)**, Chandipur M. Dakhil Madrasah (2016)
+
+## Certifications
+
+- **Complete Web Development Course**, Programming Hero (2026) - [Verify](https://drive.google.com/file/d/1TXbu_27BV0e6ttHZ5iOIk0iH6GrYfZYi/view?usp=sharing)
+- **Master HTML and CSS by Building Real-World Projects**, Udemy (2025) - [Verify](https://www.udemy.com/certificate/UC-a15ae6ed-80b0-4d97-a5e9-2151cab255d4/)
+- **Master Git and GitHub - Beginner to Expert**, Udemy (2024) - [Verify](https://www.udemy.com/certificate/UC-b1ec25ee-3cce-4c6c-b922-efda23d0fc13/)
+- **VScode shortcuts & Extensions for Web Developer**, Udemy (2024) - [Verify](https://www.udemy.com/certificate/UC-827bbc34-b709-4213-bbc0-3dc50b8c6b33/)
+- **Spreadsheets for Beginners using Google Sheets**, Bangladeshi Students Community, Islamic University of Madinah (2025) - [Verify](https://drive.google.com/file/d/1r8K7y5FjHu3nPL9AxtILtfgzrNnhuu6O/view?usp=sharing)
+
+## Contact
+
+- Email: mshossen724@gmail.com
+- LinkedIn: [Profile](https://www.linkedin.com/in/sabb1rhossen/)
+- GitHub: [Profile](https://github.com/MSabbirHossen)
+- Availability: Full-time, Internship, Freelance
+
+Full interactive portfolio: [https://msabbirhossen.github.io/](https://msabbirhossen.github.io/)
